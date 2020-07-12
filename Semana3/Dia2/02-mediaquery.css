@@ -1,0 +1,33 @@
+*{
+margin :0;
+box-sizing: border-box;
+padding: 0;
+}
+body{
+    background-color: crimson;
+}
+/* los Media Query siempre van de Mayor a Menor */
+
+/* Para todas las pantallas de dispositivos que ademas tengan un
+maximo de ancho de 1024px */
+@media screen and (max-width: 1024px){
+    /* si la pantalla llega a ser menor a 1024px el color cambiara */
+    body{
+        background-color: darkgray;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        background-color: darkslateblue;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        background-color: darkslategray;
+    }
+}
+@media screen and (max-width: 320px){
+    body{
+        background-color: goldenrod;
+    }
+}

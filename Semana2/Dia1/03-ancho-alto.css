@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    /* Funciones de reset */
+    /* Box-sizing: Cuando a un elemento se le coloque padding y border, estos no afecten 
+    en el ancho establezido para dicho elemento*/
+    box-sizing: border-box;
+}
+body{
+    background-color: #444;
+    color: white;
+}
+section{
+    width: 500px;
+    background-color: teal;
+}
+.ancho-200{
+    width: 200px;
+    background-color: gray;
+    height: 100px;
+    /* overflow: hidden */
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.noticias{
+    /* Margen a todos los lados del Elemento */
+    /* margin: 20px; */
+    margin-bottom: 20px;
+    /* border: 1px solid yellow; */
+}
+.imagenes{
+    margin-top: 20px;
+    padding: 30px;
+}
+.articulos{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    border: 1px solid green;
+}
+.articulos p{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8888;
+    /* margin-left: 50px; */
+    margin-top: 20px;
+
+    /* Margen para todos los lados */
+    /* margin: 10px */
+
+    /* margen superior e inferiior de 10px*/
+    /* margen de lsocostados de 20px */
+    /* margin: 10px 20px */
+
+    /* en sentidos de las manecillas del relojs */
+    /* superior 5px
+    derecha 10px
+    inderior 15px
+    izquierda 20px */
+    /* margin: 5px 10px 15px 20px */
+
+}

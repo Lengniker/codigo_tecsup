@@ -1,0 +1,38 @@
+body {
+  background: #444;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rojo {
+  color: red;
+}
+.amarillo {
+  color: yellow;
+}
+.naranja {
+  color: orange;
+}
+.azulhex{
+    color: #00FF00;
+}
+.violetahec{
+    color: #FF00FF;
+}
+.grisclarohex{
+    color: #ddd;
+}
+.rosadorgf{
+    color: rgb(250, 190, 190);
+}
+.amarillorgd{
+    color: rgb(255, 255, 0);
+}
+.hsl1{
+    background-color: hsl(270, 100%, 50%);
+}
+.hsl2{
+    background-color: hsl(270, 100%, 30%);
+}
+.hsl3{
+    background-color: hsl(270, 100%, 40%);
+}

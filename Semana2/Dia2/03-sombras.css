@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+.section1{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid violet; */
+    /* 1ro color de sombra
+    2do px en X - px em Y 
+    3do difuminado - resplandor*/
+    /* box-shadow: #333 10px 5px 20px 8px; */
+    box-shadow: #bbb 0px 0px 20px;
+    border-radius: 8px;
+    margin: 50px auto 0px auto;
+}
+h2{
+    /* margin: 0 auto; */
+    padding:  20px 0px;
+    text-align: center;
+    /* width: 300px; */
+    /* background-color: teal; */
+    text-shadow: #aaa 5px 2px 4px;
+}
+span{
+    background-color: tomato;
+}

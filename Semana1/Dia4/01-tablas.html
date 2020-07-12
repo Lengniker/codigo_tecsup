@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tablas Simples</h2>
+        </section>
+        <!-- table>thead+tbody+tfoot -->
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Curso</th>
+                    <th>Duracion</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Programacion con Python</td>
+                    <td>300 horas</td>
+                    <td>Backend</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Adobe Ilustrator</td>
+                    <td>30 horas</td>
+                    <td>UX/UI</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>330 horas</td>
+                    <td>-</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Ejercicio de Tabla -->
+        <!-- table>(thead>tr>th*5{Cabecera $})+(tbody>tr*3>td*5{contenido $})+(tfoot>tr>td*5{pie $}) -->
+        <section>
+            <h2>Ejercicio de Tabla</h2>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th>ITEM</th>
+                        <th>CANTIDAD</th>
+                        <th>DESCRIPCION</th>
+                        <th>P.U.</th>
+                        <th>P.T.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>mouse</td>
+                        <td>30.00</td>
+                        <td>300.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>C. HDMI</td>
+                        <td>20.00</td>
+                        <td>100.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>usb 1 Tb</td>
+                        <td>70.00</td>
+                        <td>70.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>-</td>
+                        <td>16</td>
+                        <td>TOTAL</td>
+                        <td></td>
+                        <td>470.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- Tablas con celdas combinadas -->
+        <!-- table[border="2"]>(thead>tr>th*4{Cabecera$})+(tbody>tr>td[colspan="2"]*2{Contenido $})+(tfoot>tr>td[colspan="3"]{TOTAL}+td{58}) -->
+        <section>
+            <h2>Tablas con celdas combinadas</h2>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Cabecera 1</th>
+                        <th>Cabecera 2</th>
+                        <th>Cabecera 3</th>
+                        <th>Cabecera 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Contenido 1</td>
+                        <td colspan="2">Contenido 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>56</td>
+                    </tr>
+                </tfoot>
+            </table>           
+        </section>
+        <!-- Tablas con Filas Combinadas -->
+        <section>
+            <h2>Tablas con filas combinadas</h2>
+            <table border="3">
+                <tr>
+                    <td rowspan="3">Fila 1</td>
+                    <td>Fila 1</td>
+                    <td>Fila 1</td>
+                </tr>
+                <tr>
+                    <!-- <td>Fila 2</td> -->
+                    <td>Fila 2</td>
+                    <td>Fila 2</td>
+                </tr>
+                <tr>
+                    <!-- <td>Fila 3</td> -->
+                    <td>Fila 3</td>
+                    <td>Fila 3</td>
+                </tr>
+            </table>
+            <hr>
+            <table border="3">
+                <tr>
+                    <td rowspan="3">Fila 1</td>
+                    <td>Fila 1</td>
+                    <td rowspan="3">Fila 1</td>
+                </tr>
+                <tr>
+                    <!-- <td>Fila 2</td> -->
+                    <td>Fila 2</td>
+                    <!-- <td>Fila 2</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>Fila 3</td> -->
+                    <td>Fila 3</td>
+                    <!-- <td>Fila 3</td> -->
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <!-- Ejercicio Tabla 2 -->
+        <section>
+            <h2>Ejercicio 2</h2>
+            <table border="3">
+                <tr>
+                    Contenido 1
+                    <td colspan="3">Contenido 1</td>
+                    <!-- <td>Contenido 2</td>
+                    <td>Contenido 3</td> -->
+                    <td>Contenido 4</td>
+                    <td rowspan="2">Contenido 5</td>
+                </tr>
+                <tr>
+                    Contenido 2
+                    <td>Contenido 1</td>
+                    <td>Contenido 2</td>
+                    <td>Contenido 3</td>
+                    <td>Contenido 4</td>
+                    <!-- <td>Contenido 5</td> -->
+                </tr>
+                <tr>
+                    Contenido 3
+                    <td>Contenido 1</td>
+                    <td colspan="3" rowspan="2">Contenido 2</td>
+                    <!-- <td>Contenido 3</td>
+                    <td>Contenido 4</td> -->
+                    <td>Contenido 5</td>
+                </tr>
+                <tr>
+                    Contenido 4
+                    <td>Contenido 1</td>
+                    <!-- <td>Contenido 2</td>
+                    <td>Contenido 3</td>
+                    <td>Contenido 4</td> -->
+                    <td>Contenido 5</td>
+                </tr>
+                <tr>
+                    Contenido 5
+                    <td>Contenido 1</td>
+                    <td>Contenido 2</td>
+                    <td>Contenido 3</td>
+                    <td>Contenido 4</td>
+                    <td>Contenido 5</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
